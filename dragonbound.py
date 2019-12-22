@@ -16,8 +16,8 @@ driver.get(url)
 
 WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, 'LoginUsername')))
 
-driver.find_element_by_id('LoginUsername').send_keys('sennethtsz')
-driver.find_element_by_id('LoginPass').send_keys('MILDprinter101')
+driver.find_element_by_id('LoginUsername').send_keys('')
+driver.find_element_by_id('LoginPass').send_keys('')
 driver.find_element_by_id('LoginSubmit').click()
 
 time.sleep(2)
